@@ -234,8 +234,61 @@ export default function Home() {
         {/* END OF Left Menu */}
 
         {/* Main Content */}
-        <div className="w-full lg:w-2/3 xl:w-2/5 pt-32 lg:pt-16 px-2 bg-red-200">
-          
+        <div className="w-full lg:w-2/3 xl:w-2/5 pt-32 lg:pt-16 px-2">
+          {/* STORY */}
+          <div className="relative flex space-x-2 pt-4">
+            <div className="w-1/4 sm:w-1/6 h-44 rounded-xl shadow overflow-hidden flex flex-col group cursor-pointer">
+              <div className="h-3/5 overflow-hidden">
+                <img src="profile_photo.png" alt="First Picture" className="group-hover:transform group-hover:scale-110 transition-all duration-700 " />
+              </div>
+              <div className="flex-1 relative flex items-end justify-center pb-2 text-center leading-none dark:bg-dark-second dark:text-dark-txt">
+                <span className="font-semibold">Create a <br/> Story</span>
+                <div className="w-10 h-10 rounded-full bg-blue-500 text-white grid place-items-center text-2xl border-4 border-white dark:border-dark-second absolute -top-5 left-1/2 transform -translate-x-1/2">
+                  <i className="bx bx-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/4 sm:w-1/6 h-44 rounded-xl overflow-hidden">
+              <div className="relative h-full group cursor-pointer">
+                <img src="firstStory.jpg" alt="Story iamge" className="group-hover:transform group-hover:scale-110 transition-all duration:700 h-full w-full" />
+                <div className="w-full h-full bg-black absolute top-0 left-0 bg-opacity-10"></div>
+                <span className="absolute bottom-0 left-0 pb-2 font-semibold text-white">
+                  Your story
+                </span>
+                <div className="w-10 h-10 rounded-full overflow-hidden absolute top-2 left-2 border-4 border-blue-500">
+                  <img src="avatar-3.jpg" alt="profile picture" className="w-full h-full object-cover" />
+                </div> 
+              </div>
+            </div>
+            <div className="w-1/4 sm:w-1/6 h-44 rounded-xl overflow-hidden">
+              <div className="relative h-full group cursor-pointer">
+                <img src="firstStory.jpg" alt="Story iamge" className="group-hover:transform group-hover:scale-110 transition-all duration:700 h-full w-full" />
+                <div className="w-full h-full bg-black absolute top-0 left-0 bg-opacity-10"></div>
+                <span className="absolute bottom-0 left-0 pb-2 font-semibold text-white">
+                  Your story
+                </span>
+                <div className="w-10 h-10 rounded-full overflow-hidden absolute top-2 left-2 border-4 border-blue-500">
+                  <img src="avatar-3.jpg" alt="profile picture" />
+                </div>
+              </div>
+            </div>
+            <div className="w-1/4 sm:w-1/6 h-44 rounded-xl overflow-hidden">
+              <div className="relative h-full group cursor-pointer">
+                <img src="firstStory.jpg" alt="Story iamge" className="group-hover:transform group-hover:scale-110 transition-all duration:700 h-full w-full" />
+                <div className="w-full h-full bg-black absolute top-0 left-0 bg-opacity-10"></div>
+                <span className="absolute bottom-0 left-0 pb-2 font-semibold text-white">
+                  Your story
+                </span>
+                <div className="w-10 h-10 rounded-full overflow-hidden absolute top-2 left-2 border-4 border-blue-500">
+                  <img src="avatar-3.jpg" alt="profile picture" />
+                </div>
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          {/* END OF STORY */}
         </div>
         {/* END OF Main Content */}
 
@@ -269,17 +322,107 @@ export default function Home() {
 
             <div className="border-b border-gray-200 dark:border-dark-third mt-6"></div>
             {/* Contacts */}
-            <div className="flex justify-between items-center px-4 pt-4 text-gray-500 dark:text-dark-txt">
-              <span className="font-semibold text-lg">Contacts</span>
-              <div className="flex space-x-1">
-                <div className="w-8 h-8 grid place-items-center text-xl hover:bg-gray-200 dark:hover:bg-dark-third rounded-full cursor-pointer">
-                  <i className="bx bx-search-alt-2"></i>
-                </div>
-                <div className="w-8 h-8 grid place-items-center text-xl hover:bg-gray-200 dark:hover:bg-dark-third rounded-full cursor-pointer">
-                  <i className="bx bx-dots-horizontal-rounded"></i>
+              <div className="flex justify-between items-center px-4 pt-4 text-gray-500 dark:text-dark-txt">
+                <span className="font-semibold text-lg">Contacts</span>
+                <div className="flex space-x-1">
+                  <div className="w-8 h-8 grid place-items-center text-xl hover:bg-gray-200 dark:hover:bg-dark-third rounded-full cursor-pointer">
+                    <i className="bx bx-search-alt-2"></i>
+                  </div>
+                  <div className="w-8 h-8 grid place-items-center text-xl hover:bg-gray-200 dark:hover:bg-dark-third rounded-full cursor-pointer">
+                    <i className="bx bx-dots-horizontal-rounded"></i>
+                  </div>
                 </div>
               </div>
-            </div>
+              <ul className="p-2">
+                <li>
+                  <div className="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                    <div className="relative">
+                      <img src="/avatar-3.jpg" alt="Friends profile pictures" className="rounded-full w-10 h-10 object-cover" />
+                      <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                    </div>
+                    <div>
+                      <span className="font-semibold">Chin Chin</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                    <div className="relative">
+                      <img src="/avatar-3.jpg" alt="Friends profile pictures" className="rounded-full w-10 h-10 object-cover" />
+                      <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                    </div>
+                    <div>
+                      <span className="font-semibold">Chin Chin</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                    <div className="relative">
+                      <img src="/avatar-3.jpg" alt="Friends profile pictures" className="rounded-full w-10 h-10 object-cover" />
+                      <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                    </div>
+                    <div>
+                      <span className="font-semibold">Chin Chin</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                    <div className="relative">
+                      <img src="/avatar-3.jpg" alt="Friends profile pictures" className="rounded-full w-10 h-10 object-cover" />
+                      <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                    </div>
+                    <div>
+                      <span className="font-semibold">John Doe</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                    <div className="relative">
+                      <img src="/avatar-3.jpg" alt="Friends profile pictures" className="rounded-full w-10 h-10 object-cover" />
+                      <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                    </div>
+                    <div>
+                      <span className="font-semibold">John Doe</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                    <div className="relative">
+                      <img src="/avatar-3.jpg" alt="Friends profile pictures" className="rounded-full w-10 h-10 object-cover" />
+                      <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                    </div>
+                    <div>
+                      <span className="font-semibold">John Doe</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                    <div className="relative">
+                      <img src="/avatar-3.jpg" alt="Friends profile pictures" className="rounded-full w-10 h-10 object-cover" />
+                      <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                    </div>
+                    <div>
+                      <span className="font-semibold">John Doe</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                    <div className="relative">
+                      <img src="/avatar-3.jpg" alt="Friends profile pictures" className="rounded-full w-10 h-10 object-cover" />
+                      <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                    </div>
+                    <div>
+                      <span className="font-semibold">John Doe</span>
+                    </div>
+                  </div> 
+                </li>
+              </ul>
             {/* END OF Contacts */}
           </div>
         </div>
