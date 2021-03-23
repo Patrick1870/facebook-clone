@@ -1,7 +1,11 @@
 import Head from 'next/head'
+import {useTheme} from 'next-themes'
 
-export default function Home() {
-  
+
+export default function Home() { 
+
+  const {theme, setTheme} = useTheme()
+
   return (
     <div className="bg-gray-100 dark:bg-dark-main">
       <Head>
@@ -17,7 +21,7 @@ export default function Home() {
         <div className="flex items-center justify-between w-full md:w-max px-4 py-2">
           <a href="#" className="mr-2 hidden md:inline-block">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-24 sm:w-20 lg:w-10 h-auto">
-              <g clip-path="url(#clip0)">
+              <g clipPath="url(#clip0)">
               <path d="M16.6667 39.7778C7.22222 38.1111 0 29.8889 0 20C0 9 9 0 20 0C31 0 40 9 40 20C40 29.8889 32.7778 38.1111 23.3333 39.7778L22.2222 38.8889H17.7778L16.6667 39.7778Z" fill="url(#paint0_linear)"/>
               <path d="M27.7791 25.5556L28.668 20.0001H23.3346V16.1112C23.3346 14.5556 23.8902 13.3334 26.3346 13.3334H28.8902V8.22228C27.4457 8.00005 25.8902 7.77783 24.4457 7.77783C19.8902 7.77783 16.668 10.5556 16.668 15.5556V20.0001H11.668V25.5556H16.668V39.6667C17.7791 39.8889 18.8902 40.0001 20.0013 40.0001C21.1124 40.0001 22.2235 39.8889 23.3346 39.6667V25.5556H27.7791Z" fill="url(#paint1_linear)"/>
               </g>
@@ -38,7 +42,7 @@ export default function Home() {
           </a>
           <a href="#" className="inline-block md:hidden">
             <svg width="272" height="53" viewBox="0 0 272 53" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-32 h-auto">
-              <g clip-path="url(#clip0)">
+              <g clipPath="url(#clip0)">
               <path d="M21.9692 8.83765C18.778 8.83765 17.8553 10.2554 17.8553 13.3824V18.5698H26.3674L25.5142 26.9504H17.8587V52.3838H7.64348V26.9504H0.761719V18.5698H7.64348V13.5248C7.64348 5.07134 11.0463 0.60609 20.5406 0.60609C22.5302 0.601416 24.5181 0.719787 26.4931 0.960528V8.84759L21.9692 8.83765Z" fill="#1876F2"/>
               <path d="M27.0742 34.4102C27.0742 24.9629 31.5419 17.8477 40.9039 17.8477C46.0098 17.8477 49.1283 20.4778 50.6197 23.7439V18.5698H60.405V52.3838H50.6197V47.2693C49.201 50.5387 46.0098 53.096 40.9039 53.096C31.5419 53.096 27.0742 45.9907 27.0742 36.5335V34.4102ZM37.2861 36.6858C37.2861 41.7275 39.1281 45.0665 43.8801 45.0665C48.0667 45.0665 50.1931 42.0123 50.1931 37.1827V33.7874C50.1931 28.9578 48.0667 25.9037 43.8801 25.9037C39.1281 25.9037 37.2861 29.2427 37.2861 34.2843V36.6858Z" fill="#1876F2"/>
               <path d="M81.6819 17.8574C85.6502 17.8574 89.4102 18.712 91.4671 20.1298L89.1986 27.3775C87.0708 26.3626 84.7462 25.8288 82.3895 25.814C76.857 25.814 74.4529 29.0106 74.4529 34.4829V36.4704C74.4529 41.9426 76.8636 45.1392 82.3895 45.1392C84.7462 45.1244 87.0708 44.5906 89.1986 43.5757L91.4671 50.8201C89.4102 52.2412 85.6535 53.0958 81.6819 53.0958C69.6942 53.0958 64.2344 46.6298 64.2344 36.2584V34.6949C64.2344 24.3234 69.6942 17.8574 81.6819 17.8574Z" fill="#1876F2"/>
@@ -60,10 +64,10 @@ export default function Home() {
               <i className="bx bx-search-alt-2 text-xl xl:mr dark:text-dark-txt"></i>
               <input type="text" placeholder="Search Facebook..." className="outline-none bg-transparent hidden xl:inline-block" />
             </div>
-            <div className="text-2xl grid place-items-center md:hidden bg-gray-200 dark:bg-dark-third rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark-text-dark-txt">
+            <div className="text-2xl grid place-items-center md:hidden bg-gray-200 dark:bg-dark-third rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark:text-dark-txt">
               <i className="bx bxl-messenger"></i>
             </div>
-            <div className="text-2xl grid place-items-center md:hidden bg-gray-200 dark:bg-dark-third rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark-text-dark-txt">
+            <div className="text-2xl grid place-items-center md:hidden bg-gray-200 dark:bg-dark-third rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark:text-dark-txt" id="dark-mode-toggle-md" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
               <i className="bx bxs-moon"></i>
             </div>
           </div>
@@ -74,34 +78,34 @@ export default function Home() {
         <ul className="flex w-full lg:w-max items-center justify-center">
             <li className="w-1/5 md:w-max text-center">
               <a href="#" className="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block text-blue-500 border-b-4 border-blue-500">
-                <i class="bx bxs-home"></i>
+                <i className="bx bxs-home"></i>
               </a>
             </li>
             <li className="w-1/5 md:w-max text-center">
               <a href="#" className="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
-                <i class="bx bx-movie-play"></i>
+                <i className="bx bx-movie-play"></i>
                 <span className="text-xs absolute top-0 right-1/4 bg-red-500 text-white font-semibold rounded-full px-1 text-center">2</span>
               </a>
             </li>
             <li className="w-1/5 md:w-max text-center">
               <a href="#" className="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
-                <i class="bx bx-store"></i>
+                <i className="bx bx-store"></i>
               </a>
             </li>
             <li className="w-1/5 md:w-max text-center">
               <a href="#" className="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
-                <i class="bx bx-group"></i>
+                <i className="bx bx-group"></i>
               </a>
             </li>
             <li className="w-1/5 md:w-max text-center hidden md:inline-block">
               <a href="#" className="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
-                <i class="bx bx-layout"></i>
+                <i className="bx bx-layout"></i>
                 <span className="text-xs absolute top-0 right-1/4 bg-red-500 text-white font-semibold rounded-full px-1 text-center">8</span>
               </a>
             </li>
             <li className="w-1/5 md:w-max text-center inline-block md:hidden">
               <a href="#" className="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
-                <i class="bx bx-menu"></i>
+                <i className="bx bx-menu"></i>
               </a>
             </li>
         </ul>
@@ -133,7 +137,7 @@ export default function Home() {
             </div>
           </li>
           <li>
-            <div className="text-xl grid place-items-center bg-gray-200 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+            <div className="text-xl grid place-items-center bg-gray-200 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative" id="dark-mode-toggle" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
               <i className="bx bxs-moon"></i>
             </div>
           </li>
@@ -349,35 +353,35 @@ export default function Home() {
                 <span className="text-sm font-semibold text-blue-500">Create Room</span>
               </div>
               <div className="relative cursor-pointer">
-                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer">
-                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer">
-                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer">
-                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer hidden sm:inline">
-                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer hidden sm:inline">
-                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer hidden sm:inline">
-                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer hidden sm:inline">
-                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="w-12 h-12 rounded-full hidden lg:grid place-items-center text-2xl text-gray-500 bg-white absolute right-0 top-1/2 transform -translate-y-1/2 border border-gray-200 cursor-pointer hover:bg-gray-100 shadow dark:bg-dark-third dark:border-dark-third dark:text-dark-txt">
@@ -661,7 +665,7 @@ export default function Home() {
 
         {/* Right Menu */}
         <div className="w-1/5 pt-16 h-full hidden xl:flex px-4 fixed top-0 right-0">
-          <div class="h-full">
+          <div className="h-full">
             <div className="flex justify-between items-center px-2 pt-4">
               <span className="font-semibold text-gray-500 text-lg dark:text-dark-txt">Friend requests</span>
               <span className="text-blue-500 cursor-pointer hover:bg-gray-200 dark:hover:bg-dark-third p-2   rounded-md">See All</span>
