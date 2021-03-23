@@ -252,8 +252,8 @@ export default function Home() {
               <div className="relative h-full group cursor-pointer">
                 <img src="firstStory.jpg" alt="Story iamge" className="group-hover:transform group-hover:scale-110 transition-all duration:700 h-full w-full" />
                 <div className="w-full h-full bg-black absolute top-0 left-0 bg-opacity-10"></div>
-                <span className="absolute bottom-0 left-0 pb-2 font-semibold text-white">
-                  Your story
+                <span className="absolute bottom-0 left-2 pb-2 font-semibold text-white">
+                  Lorem
                 </span>
                 <div className="w-10 h-10 rounded-full overflow-hidden absolute top-2 left-2 border-4 border-blue-500">
                   <img src="avatar-3.jpg" alt="profile picture" className="w-full h-full object-cover" />
@@ -264,8 +264,8 @@ export default function Home() {
               <div className="relative h-full group cursor-pointer">
                 <img src="firstStory.jpg" alt="Story iamge" className="group-hover:transform group-hover:scale-110 transition-all duration:700 h-full w-full" />
                 <div className="w-full h-full bg-black absolute top-0 left-0 bg-opacity-10"></div>
-                <span className="absolute bottom-0 left-0 pb-2 font-semibold text-white">
-                  Your story
+                <span className="absolute bottom-0 left-2 pb-2 font-semibold text-white">
+                  John Doe
                 </span>
                 <div className="w-10 h-10 rounded-full overflow-hidden absolute top-2 left-2 border-4 border-blue-500">
                   <img src="avatar-3.jpg" alt="profile picture" />
@@ -276,19 +276,171 @@ export default function Home() {
               <div className="relative h-full group cursor-pointer">
                 <img src="firstStory.jpg" alt="Story iamge" className="group-hover:transform group-hover:scale-110 transition-all duration:700 h-full w-full" />
                 <div className="w-full h-full bg-black absolute top-0 left-0 bg-opacity-10"></div>
-                <span className="absolute bottom-0 left-0 pb-2 font-semibold text-white">
-                  Your story
+                <span className="absolute bottom-0 left-2 pb-2 font-semibold text-white">
+                  Jane Doe
                 </span>
                 <div className="w-10 h-10 rounded-full overflow-hidden absolute top-2 left-2 border-4 border-blue-500">
                   <img src="avatar-3.jpg" alt="profile picture" />
                 </div>
               </div>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div className="hidden sm:inline-block w-1/4 sm:w-1/6 h-44 rounded-xl overflow-hidden">
+              <div className="relative h-full group cursor-pointer">
+                <img src="firstStory.jpg" alt="Story iamge" className="group-hover:transform group-hover:scale-110 transition-all duration:700 h-full w-full" />
+                <div className="w-full h-full bg-black absolute top-0 left-0 bg-opacity-10"></div>
+                <span className="absolute bottom-0 left-2 pb-2 font-semibold text-white">
+                  Jane Doe
+                </span>
+                <div className="w-10 h-10 rounded-full overflow-hidden absolute top-2 left-2 border-4 border-blue-500">
+                  <img src="avatar-3.jpg" alt="profile picture" />
+                </div>
+              </div>
+            </div>
+            <div className="hidden sm:inline-block w-1/4 sm:w-1/6 h-44 rounded-xl overflow-hidden">
+              <div className="relative h-full group cursor-pointer">
+                <img src="firstStory.jpg" alt="Story iamge" className="group-hover:transform group-hover:scale-110 transition-all duration:700 h-full w-full" />
+                <div className="w-full h-full bg-black absolute top-0 left-0 bg-opacity-10"></div>
+                <span className="absolute bottom-0 left-2 pb-2 font-semibold text-white">
+                  Jane Doe
+                </span>
+                <div className="w-10 h-10 rounded-full overflow-hidden absolute top-2 left-2 border-4 border-blue-500">
+                  <img src="avatar-3.jpg" alt="profile picture" />
+                </div>
+              </div>
+            </div>
+            <div className="w-12 h-12 rounded-full hidden lg:grid place-items-center text-2xl bg-white absolute -right-12 top-1/2 transform -translate-x-1/2 border border-gray-200 cursor-pointer hover:bg-gray-100 shadow text-gray-500 dark:bg-dark-third dark:border-dark-third dark:text-dark-txt">
+              <i className="bx bx-right-arrow-alt"></i>
+            </div>
           </div>
           {/* END OF STORY */}
+
+          {/* Post Form */}
+          <div className="px-4 mt-4 shadow rounded-lg bg-white dark:bg-dark-second">
+            <div className="p-2 border-b border-gray-300 dark:border-dark-third flex space-x-4">
+              <img src="#" alt="profile picture" className="w-10 h-10 rounded-full" />
+              <div className="flex-1 bg-gray-100 rounded-full flex items-center justify-start pl-4 cursor-pointer dark:bg-dark-third text-gray-500 text-lg dark:text-dark-txt">
+                <span>
+                  What's up?
+                </span>
+              </div>
+            </div>
+            <div className="p-2 flex">
+              <div className="w-1/3 flex space-x-2 justify-center items-center hover:bg-gray-100 dark:hover:bg-dark-third text-xl sm:text-3xl py-2 rounded-lg cursor-pointer text-red-500">
+                <i className="bx bxs-video-plus"></i>
+                <span className="text-xs sm:text-sm font-semibold text-gray-500 dark:text-dark-txt">Live video</span>
+              </div>
+              <div className="w-1/3 flex space-x-2 justify-center items-center hover:bg-gray-100 dark:hover:bg-dark-third text-xl sm:text-3xl py-2 rounded-lg cursor-pointer text-green-500">
+                <i className="bx bx-images"></i>
+                <span className="text-xs sm:text-sm font-semibold text-gray-500 dark:text-dark-txt">Live video</span>
+              </div>
+              <div className="w-1/3 flex space-x-2 justify-center items-center hover:bg-gray-100 dark:hover:bg-dark-third text-xl sm:text-3xl py-2 rounded-lg cursor-pointer text-yellow-500">
+                <i className="bx bx-smile"></i>
+                <span className="text-xs sm:text-sm font-semibold text-gray-500 dark:text-dark-txt">Live video</span>
+              </div>
+            </div>
+          </div>
+          {/* END OF Post Form */}
+
+          {/* Room */}
+          <div className="p-4 mt-4 shadow rounded-lg bg-white dark:bg-dark-second overflow-hidden">
+            <div className="flex space-x-4 relative">
+              <div className="w-1/2 lg:w-3/12 flex space-x-2 items-center justify-center border-2 border-blue-200 dark:border-blue-700 rounded-full cursor-pointer">
+                <i className="bx bxs-video-plus text-2xl text-purple-500"></i>
+                <span className="text-sm font-semibold text-blue-500">Create Room</span>
+              </div>
+              <div className="relative cursor-pointer">
+                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+              </div>
+              <div className="relative cursor-pointer">
+                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+              </div>
+              <div className="relative cursor-pointer">
+                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+              </div>
+              <div className="relative cursor-pointer">
+                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+              </div>
+              <div className="relative cursor-pointer hidden sm:inline">
+                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+              </div>
+              <div className="relative cursor-pointer hidden sm:inline">
+                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+              </div>
+              <div className="relative cursor-pointer hidden sm:inline">
+                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+              </div>
+              <div className="relative cursor-pointer hidden sm:inline">
+                <img src="avatar-3.jpg" alt="profile picture" class="rounded-full" />
+                <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+              </div>
+              <div className="w-12 h-12 rounded-full hidden lg:grid place-items-center text-2xl text-gray-500 bg-white absolute right-0 top-1/2 transform -translate-y-1/2 border border-gray-200 cursor-pointer hover:bg-gray-100 shadow dark:bg-dark-third dark:border-dark-third dark:text-dark-txt">
+                <i className="bx bxs-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          {/* END OF Room */}
+
+          {/* Posts List */}
+          <div>
+
+            {/* Single Post */}
+            <div className="shadow bg-white dark:bg-dark-second dark:text-dark-txt mt-4 rounded-lg">
+              {/* Post Author */}
+              <div className="flex items-center justify-between px-4 py-2">
+                <div className="flex space-x-2 items-center">
+                  <div className="relative">
+                      <img src="avatar-3.jpg" alt="Profile picture" className="w-10 h-10 rounded-full" />
+                      <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                  </div>
+                  <div>
+                    <div className="font-semibold">
+                      John  Doe
+                    </div>
+                    <span className="text-sm text-gray-500">35m</span>
+                  </div>
+                </div>
+                <div className="w-8 h-8 grid place-items-center text-xl text-gray-500 hover:bg-gray-200 dark:text-dark-txt dark:hover:bg-dark-third rounded-full cursor-pointer">
+                  <i className="bx bx-dots-horizontal-rounded"></i>
+                </div>
+              </div>
+              {/* END OF Post Author */}
+
+              {/* Post Content */}
+              <div className="text-justify px-4 py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis mollis est, nec vestibulum lacus. Integer facilisis risus lacinia ligula bibendum malesuada. Pellentesque quam nisl, tempus id maximus non, condimentum sit amet quam. Sed sit amet porta mi. Cras tempus tempus facilisis. Suspendisse id sem risus. 
+              </div>
+              {/* END OF Post Content */}
+
+              {/* Post Image */}
+              <div class="py-2">
+                <img src="firstStory.jpg" alt="post image" />
+              </div>
+              {/* END OFPost Image */}
+
+              {/* Post Reactions */}
+              <div className="px-4 py-2">
+                <div>
+                  <span>31</span>
+                  <span>
+                    <i className=""></i>
+                  </span>
+                </div>
+              </div>
+              {/* END OF Post Reactions */}
+
+            </div>
+            {/* END OF Single Post */}
+
+          </div>
+          {/* END OF Posts List */}
+          
         </div>
         {/* END OF Main Content */}
 
