@@ -419,22 +419,237 @@ export default function Home() {
               {/* END OF Post Content */}
 
               {/* Post Image */}
-              <div class="py-2">
-                <img src="firstStory.jpg" alt="post image" />
+              <div className="py-2 w-full">
+                <img src="firstStory.jpg" alt="post image" className="object-cover w-full max-h-96" />
               </div>
               {/* END OFPost Image */}
 
               {/* Post Reactions */}
               <div className="px-4 py-2">
-                <div>
-                  <span>31</span>
-                  <span>
-                    <i className=""></i>
-                  </span>
+                <div className="flex items-center justify-between">
+                  <div className="flex flex-row-reverse items-center">
+                    <span className="ml-2 text-gray-500 dark:text-dark-txt">31</span>
+                    <span className="rounded-full grid place-items-center text-2xl -ml-1 text-red-800">
+                      <i className="bx bxs-angry"></i>
+                    </span>
+                    <span className="rounded-full grid place-items-center text-2xl -ml-1 text-red-500">
+                      <i className="bx bxs-heart-article"></i>
+                    </span>
+                    <span className="rounded-full grid place-items-center text-2xl -ml-1 text-yellow-500">
+                      <i className="bx bx-happy-alt"></i>
+                    </span>
+                  </div>
+                  <div className="text-gray-500 dark:text-dark-txt">
+                    <span>7 comments</span>
+                    <div>1 share</div>
+                  </div>
                 </div>
               </div>
               {/* END OF Post Reactions */}
 
+              {/* Post Action */}
+              <div className="py-2 px-4">
+                <div className="border border-gray-200 dark:border-dark-third border-l-0 border-r-0 py-1">
+                  <div className="flex space-x-2">
+                    <div className="w-1/3 flex space-x-2 justify-center items-center hover:bg-gray-100 dark:hover:bg-darl-third text-xl py-2 rounded-lg cursor-pointer text-gray-500 dark:text-dark-txt">
+                      <i className="bx bx-like"></i>
+                      <span className="text-sm font-semibold">Like</span>
+                    </div>
+                    <div className="w-1/3 flex space-x-2 justify-center items-center hover:bg-gray-100 dark:hover:bg-darl-third text-xl py-2 rounded-lg cursor-pointer text-gray-500 dark:text-dark-txt">
+                      <i className="bx bx-comment"></i>
+                      <span className="text-sm font-semibold">Comment</span>
+                    </div>
+                    <div className="w-1/3 flex space-x-2 justify-center items-center hover:bg-gray-100 dark:hover:bg-darl-third text-xl py-2 rounded-lg cursor-pointer text-gray-500 dark:text-dark-txt">
+                      <i className="bx bx-share bx-flip-horizontal"></i>
+                      <span className="text-sm font-semibold">Share</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* END OF Post Action */}
+
+              {/* Post Comments List */}
+              <div className="py-2 px-4">
+                {/* Comment */}
+                <div className="flex space-x-2">
+                  <img src="avatar-3.jpg" alt="profile-picture" className="w-9 h-9 rounded-full" />
+                  <div>
+                    <div className="bg-gray-100 dark:bg-dark-third p-2 rounded-2xl text-sm">
+                      <span className="font-semibold block">John Doe</span>
+                      <span>Lorem ipsum at gais undu robrtuis anais.</span>
+                    </div>
+                    <div className="p-2 text-xs text-gray-500 dark:text-dark-txt">
+                      <span className="font-semibold cursor-pointer">Like</span>
+                      <span>.</span>
+                      <span className="font-semibold cursor-pointer">Reply</span>
+                      <span>.</span>
+                      10m
+                    </div>
+                  </div>
+                </div>
+                {/* END OF Comment */}
+                
+              </div>
+              {/* END OF Post Comments List */}
+
+              {/* Post Comment Form */}
+              <div className="py-2 px-4"> 
+                <div className="flex space-x-2">
+                  <img src="avatar-3.jpg" alt="Profile picture" className="w-9 h-9 rounded-full" />
+                  <div className="flex-1 flex bg-gray-100 dark:bg-dark-third rounded-full items-center justify-between px-3">
+                    <input type="text" placeholder="Write a comment..." className="outline-none bg-transparent flex-1" />
+                    <div className="flex space-x-0 items-center justify-center">
+                      <span className="w7 h-7 grid place-items-center rounded-full hover:bg-gray-200 cursor-pointer text-gray-500 dark:text-dark-txt dark:hover:bg-dark-second text-xl">
+                        <i className="bx bx-smile"></i>
+                      </span>
+                      <span className="w7 h-7 grid place-items-center rounded-full hover:bg-gray-200 cursor-pointer text-gray-500 dark:text-dark-txt dark:hover:bg-dark-second text-xl">
+                        <i className="bx bx-camera"></i>
+                      </span>
+                      <span className="w7 h-7 grid place-items-center rounded-full hover:bg-gray-200 cursor-pointer text-gray-500 dark:text-dark-txt dark:hover:bg-dark-second text-xl">
+                        <i className="bx bxs-file-gif"></i>
+                      </span>
+                      <span className="w7 h-7 grid place-items-center rounded-full hover:bg-gray-200 cursor-pointer text-gray-500 dark:text-dark-txt dark:hover:bg-dark-second text-xl">
+                        <i className="bx bx-happy-heart-eyes"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* END OF Post Comment Form */}
+            </div>
+            {/* END OF Single Post */}
+
+            {/* Single Post */}
+            <div className="shadow bg-white dark:bg-dark-second dark:text-dark-txt mt-4 rounded-lg">
+              {/* Post Author */}
+              <div className="flex items-center justify-between px-4 py-2">
+                <div className="flex space-x-2 items-center">
+                  <div className="relative">
+                      <img src="avatar-3.jpg" alt="Profile picture" className="w-10 h-10 rounded-full" />
+                      <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
+                  </div>
+                  <div>
+                    <div className="font-semibold">
+                      John  Doe
+                    </div>
+                    <span className="text-sm text-gray-500">35m</span>
+                  </div>
+                </div>
+                <div className="w-8 h-8 grid place-items-center text-xl text-gray-500 hover:bg-gray-200 dark:text-dark-txt dark:hover:bg-dark-third rounded-full cursor-pointer">
+                  <i className="bx bx-dots-horizontal-rounded"></i>
+                </div>
+              </div>
+              {/* END OF Post Author */}
+
+              {/* Post Content */}
+              <div className="text-justify px-4 py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis mollis est, nec vestibulum lacus. Integer facilisis risus lacinia ligula bibendum malesuada. Pellentesque quam nisl, tempus id maximus non, condimentum sit amet quam. Sed sit amet porta mi. Cras tempus tempus facilisis. Suspendisse id sem risus. 
+              </div>
+              {/* END OF Post Content */}
+
+              {/* Post Image */}
+              <div className="py-2">
+                  <div className="grid grid-cols-2 gap-1">
+                    <img src="firstStory.jpg" />
+                    <img src="firstStory.jpg" />
+                    <img src="firstStory.jpg" />
+                    <img src="firstStory.jpg" />
+                  </div>
+              </div>
+              {/* END OFPost Image */}
+
+              {/* Post Reactions */}
+              <div className="px-4 py-2">
+                <div className="flex items-center justify-between">
+                  <div className="flex flex-row-reverse items-center">
+                    <span className="ml-2 text-gray-500 dark:text-dark-txt">31</span>
+                    <span className="rounded-full grid place-items-center text-2xl -ml-1 text-red-800">
+                      <i className="bx bxs-angry"></i>
+                    </span>
+                    <span className="rounded-full grid place-items-center text-2xl -ml-1 text-red-500">
+                      <i className="bx bxs-heart-article"></i>
+                    </span>
+                    <span className="rounded-full grid place-items-center text-2xl -ml-1 text-yellow-500">
+                      <i className="bx bx-happy-alt"></i>
+                    </span>
+                  </div>
+                  <div className="text-gray-500 dark:text-dark-txt">
+                    <span>7 comments</span>
+                    <div>1 share</div>
+                  </div>
+                </div>
+              </div>
+              {/* END OF Post Reactions */}
+
+              {/* Post Action */}
+              <div className="py-2 px-4">
+                <div className="border border-gray-200 dark:border-dark-third border-l-0 border-r-0 py-1">
+                  <div className="flex space-x-2">
+                    <div className="w-1/3 flex space-x-2 justify-center items-center hover:bg-gray-100 dark:hover:bg-darl-third text-xl py-2 rounded-lg cursor-pointer text-gray-500 dark:text-dark-txt">
+                      <i className="bx bx-like"></i>
+                      <span className="text-sm font-semibold">Like</span>
+                    </div>
+                    <div className="w-1/3 flex space-x-2 justify-center items-center hover:bg-gray-100 dark:hover:bg-darl-third text-xl py-2 rounded-lg cursor-pointer text-gray-500 dark:text-dark-txt">
+                      <i className="bx bx-comment"></i>
+                      <span className="text-sm font-semibold">Comment</span>
+                    </div>
+                    <div className="w-1/3 flex space-x-2 justify-center items-center hover:bg-gray-100 dark:hover:bg-darl-third text-xl py-2 rounded-lg cursor-pointer text-gray-500 dark:text-dark-txt">
+                      <i className="bx bx-share bx-flip-horizontal"></i>
+                      <span className="text-sm font-semibold">Share</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* END OF Post Action */}
+
+              {/* Post Comments List */}
+              <div className="py-2 px-4">
+                {/* Comment */}
+                <div className="flex space-x-2">
+                  <img src="avatar-3.jpg" alt="profile-picture" className="w-9 h-9 rounded-full" />
+                  <div>
+                    <div className="bg-gray-100 dark:bg-dark-third p-2 rounded-2xl text-sm">
+                      <span className="font-semibold block">John Doe</span>
+                      <span>Lorem ipsum at gais undu robrtuis anais.</span>
+                    </div>
+                    <div className="p-2 text-xs text-gray-500 dark:text-dark-txt">
+                      <span className="font-semibold cursor-pointer">Like</span>
+                      <span>.</span>
+                      <span className="font-semibold cursor-pointer">Reply</span>
+                      <span>.</span>
+                      10m
+                    </div>
+                  </div>
+                </div>
+                {/* END OF Comment */}
+                
+              </div>
+              {/* END OF Post Comments List */}
+
+              {/* Post Comment Form */}
+              <div className="py-2 px-4"> 
+                <div className="flex space-x-2">
+                  <img src="avatar-3.jpg" alt="Profile picture" className="w-9 h-9 rounded-full" />
+                  <div className="flex-1 flex bg-gray-100 dark:bg-dark-third rounded-full items-center justify-between px-3">
+                    <input type="text" placeholder="Write a comment..." className="outline-none bg-transparent flex-1" />
+                    <div className="flex space-x-0 items-center justify-center">
+                      <span className="w7 h-7 grid place-items-center rounded-full hover:bg-gray-200 cursor-pointer text-gray-500 dark:text-dark-txt dark:hover:bg-dark-second text-xl">
+                        <i className="bx bx-smile"></i>
+                      </span>
+                      <span className="w7 h-7 grid place-items-center rounded-full hover:bg-gray-200 cursor-pointer text-gray-500 dark:text-dark-txt dark:hover:bg-dark-second text-xl">
+                        <i className="bx bx-camera"></i>
+                      </span>
+                      <span className="w7 h-7 grid place-items-center rounded-full hover:bg-gray-200 cursor-pointer text-gray-500 dark:text-dark-txt dark:hover:bg-dark-second text-xl">
+                        <i className="bx bxs-file-gif"></i>
+                      </span>
+                      <span className="w7 h-7 grid place-items-center rounded-full hover:bg-gray-200 cursor-pointer text-gray-500 dark:text-dark-txt dark:hover:bg-dark-second text-xl">
+                        <i className="bx bx-happy-heart-eyes"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* END OF Post Comment Form */}
             </div>
             {/* END OF Single Post */}
 
@@ -584,7 +799,7 @@ export default function Home() {
       {/* END OF MAIN */}
 
       <footer>
-        footer
+        &copy; Patryk Adach
       </footer>
     </div>
   )
