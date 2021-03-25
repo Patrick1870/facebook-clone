@@ -1,3 +1,7 @@
+Application screenshot: 
+![alt text](https://github.com/Patrick1870/facebook-clone/blob/master/frontend/public/src.png?raw=true)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
