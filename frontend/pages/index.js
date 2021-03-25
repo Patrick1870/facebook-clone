@@ -115,7 +115,7 @@ export default function Home() {
         <ul className="hidden md:flex mx-4 items-center justify-center">
           <li className="h-full hidden xl:flex">
             <a href="#" className="inline-flex items-center justify-center p-1 rounded-full hover:bg-gray-200 dark:hover:bg-dark-third mx-1">
-              <img src="#" alt="Profile picture"  className="rounded-full h-7 w-7"/>
+              <img src="profile_photo.png" alt="Profile picture"  className="rounded-full h-7 w-7"/>
               <span className="mx-2 font-semibold dark:text-dark-txt"></span>
               <span>Patryk</span>
             </a>
@@ -153,31 +153,31 @@ export default function Home() {
           <ul>
             <li>
               <a href="#" className="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
-                <img src="#" alt="Profile picture" className="w-10 h-10 rounded-full" />
+                <img src="profile_photo.png" alt="Profile picture" className="w-10 h-10 rounded-full" />
                 <span className="font-semibold">Patryk Adach</span>
               </a>
             </li>
             <li>
               <a href="#" className="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
-                <img src="#" alt="Friends picture" className="w-10 h-10 rounded-full" />
+                <img src="friends.png" alt="Friends picture" className="w-10 h-10 rounded-full" />
                 <span className="font-semibold">Friends</span>
               </a>
             </li>
             <li>
               <a href="#" className="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
-                <img src="#" alt="Profile picture" className="w-10 h-10 rounded-full" />
+                <img src="pages.png" alt="Profile picture" className="w-10 h-10 rounded-full" />
                 <span className="font-semibold">Pages</span>
               </a>
             </li>
             <li>
               <a href="#" className="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
-                <img src="#" alt="Profile picture" className="w-10 h-10 rounded-full" />
+                <img src="memories.png" alt="Profile picture" className="w-10 h-10 rounded-full" />
                 <span className="font-semibold">Memories</span>
               </a>
             </li>
             <li>
               <a href="#" className="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
-                <img src="#" alt="Profile picture" className="w-10 h-10 rounded-full" />
+                <img src="groups.png" alt="Profile picture" className="w-10 h-10 rounded-full" />
                 <span className="font-semibold">Groups</span>
               </a>
             </li>
@@ -200,13 +200,13 @@ export default function Home() {
           <ul className="p-2">
             <li>
               <a href="#" className="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
-                <img src="#" alt="Profile picture" className="w-10 h-10 rounded-lg" />
+                <img src="traidingjam.jpg" alt="Profile picture" className="w-10 h-10 rounded-lg" />
                 <span className="font-semibold">Traiding JAM Session PL</span>
               </a>
             </li>
             <li>
               <a href="#" className="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
-                <img src="#" alt="Profile picture" className="w-10 h-10 rounded-lg" />
+                <img src="rozmowyostartupach.jpg" alt="Profile picture" className="w-10 h-10 rounded-lg" />
                 <span className="font-semibold">Rozmowy o Startupach</span>
               </a>
             </li>
@@ -353,35 +353,35 @@ export default function Home() {
                 <span className="text-sm font-semibold text-blue-500">Create Room</span>
               </div>
               <div className="relative cursor-pointer">
-                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full w-10 h-10 object-cover" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer">
-                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full w-full h-full object-cover" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer">
-                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full w-full h-full object-cover" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer">
-                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full w-full h-full object-cover" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer hidden sm:inline">
-                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full w-full h-full object-cover" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer hidden sm:inline">
-                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full w-full h-full object-cover" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer hidden sm:inline">
-                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full w-full h-full object-cover" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="relative cursor-pointer hidden sm:inline">
-                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full" />
+                <img src="avatar-3.jpg" alt="profile picture" className="rounded-full w-full h-full object-cover" />
                 <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
               </div>
               <div className="w-12 h-12 rounded-full hidden lg:grid place-items-center text-2xl text-gray-500 bg-white absolute right-0 top-1/2 transform -translate-y-1/2 border border-gray-200 cursor-pointer hover:bg-gray-100 shadow dark:bg-dark-third dark:border-dark-third dark:text-dark-txt">
@@ -673,7 +673,7 @@ export default function Home() {
 
             <div className="p-2">
               <a href="#" className="flex items-center space-x-4 p-2 hover:bg-gray-200 dark:hover:bg-dark-third rounded-lg transition-all">
-                <img src="#" alt="profile picture" className="w-16 h-16 rounded-full" />
+                <img src="profile_photo.png" alt="profile picture" className="w-16 h-16 rounded-full" />
                 <div className="flex-1 h-full">
                   <div className="dark:text-dark-txt">
                     <span className="font-semibold">Patryk Adach</span>
