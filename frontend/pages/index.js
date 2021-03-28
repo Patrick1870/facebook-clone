@@ -321,7 +321,7 @@ export default function Home() {
           {/* Post Form */}
           <div className="px-4 mt-4 shadow rounded-lg bg-white dark:bg-dark-second">
             <div className="p-2 border-b border-gray-300 dark:border-dark-third flex space-x-4">
-              <img src="#" alt="profile picture" className="w-10 h-10 rounded-full" />
+              <img src="profile_photo.png" alt="profile picture" className="w-10 h-10 rounded-full" />
               <div className="flex-1 bg-gray-100 rounded-full flex items-center justify-start pl-4 cursor-pointer dark:bg-dark-third text-gray-500 text-lg dark:text-dark-txt">
                 <span>
                   What's up?
@@ -756,7 +756,7 @@ export default function Home() {
                       <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
                     </div>
                     <div>
-                      <span className="font-semibold">John Doe</span>
+                      <span className="font-semibold">John Orban</span>
                     </div>
                   </div>
                 </li>
@@ -767,7 +767,7 @@ export default function Home() {
                       <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
                     </div>
                     <div>
-                      <span className="font-semibold">John Doe</span>
+                      <span className="font-semibold">Thomas Thomashewsky</span>
                     </div>
                   </div>
                 </li>
