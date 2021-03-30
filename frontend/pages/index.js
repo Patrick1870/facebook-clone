@@ -789,7 +789,7 @@ export default function Home() {
                       <span className="bg-green-500 w-3 h-3 rounded-full absolute right-0 top-3/4 border-white border-2"></span>
                     </div>
                     <div>
-                      <span className="font-semibold">John Doe</span>
+                      <span className="font-semibold">Thomas Thomas</span>
                     </div>
                   </div> 
                 </li>
