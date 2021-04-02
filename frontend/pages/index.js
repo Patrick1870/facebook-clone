@@ -27,12 +27,12 @@ export default function Home() {
               </g>
               <defs>
               <linearGradient id="paint0_linear" x1="20" y1="38.6156" x2="20" y2="0" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#0062E0"/>
-              <stop offset="1" stop-color="#19AFFF"/>
+              <stop stopColor="#0062E0"/>
+              <stop offset="1" stopColor="#19AFFF"/>
               </linearGradient>
               <linearGradient id="paint1_linear" x1="20.2791" y1="39.0586" x2="20.2791" y2="7.77783" gradientUnits="userSpaceOnUse">
-              <stop stop-color="white"/>
-              <stop offset="1" stop-color="white"/>
+              <stop stopColor="white"/>
+              <stop offset="1" stopColor="white"/>
               </linearGradient>
               <clipPath id="clip0">
               <rect width="40" height="40" fill="white"/>
